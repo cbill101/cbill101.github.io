@@ -3,25 +3,23 @@
 @media screen and (max-width: 600px) {
 	.top-menu {
 		display: none;
+		overflow: hidden;
 	}
 
 	.top-menu.hmb {
-		display: grid;
-		position: relative;
-		top: 1em;
-		right: 100%;
-	}
-
-	.top-menu.hmb li {
 		display: block;
-		padding: 1em;
-		text-align: center;
+		background-color: white;
+		position: absolute;
+		left: 0;
+		top: 2.5em;
+		
 	}
 	
 	.top-menu.hmb a {
+		display: block;
 		position: relative;
-		right: calc(41% - 1em);
 		text-align: center;
+		float: none;
 	}
 
 	.menu-toggle {
