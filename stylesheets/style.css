@@ -5,6 +5,25 @@
 		display: none;
 	}
 
+	.top-menu.hmb {
+		display: grid;
+		position: relative;
+		top: 1em;
+		right: 100%;
+	}
+
+	.top-menu.hmb li {
+		display: block;
+		padding: 1em;
+		text-align: center;
+	}
+	
+	.top-menu.hmb a {
+		position: relative;
+		right: calc(41% - 1em);
+		text-align: center;
+	}
+
 	.menu-toggle {
 		display: block;
 		position: absolute;
@@ -14,14 +33,19 @@
 		margin: 0;
 	}
 
-	.tog-bar {
+	#tog-bar {
 		margin: 0;
 		padding: 0;
+		cursor: pointer;
 	}
 }
 
 @media screen and (min-width: 601px) {
-	.menu-toggle {
+	nav {
+		display: initial;
+	}
+
+	#tog-bar {
 		display: none;
 	}
 }
@@ -42,6 +66,7 @@ header {
 	width: calc(100% - 2em);
 	background: white;
 	position: fixed;
+	z-index: 100;
 }
 
 header a {

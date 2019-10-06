@@ -14,7 +14,7 @@
 		<a href="#" class="logo">Chris Billingsley</a>
 		<nav>
 			<div class="menu-toggle">
-				<h1 class="tog-bar">
+				<h1 id="tog-bar">
 					☰
 				</h1>
 			</div>
@@ -24,6 +24,15 @@
 				<li><a href="#">Contact Me</a></li>
 			</ul>
 		</nav>
+		<script language="javascript">
+				function toggleMenu() {
+					let getMenu = document.querySelector(".top-menu");
+					getMenu.classList.toggle("hmb");
+				}
+		
+				let getHMB = document.querySelector("#tog-bar");
+				getHMB.addEventListener("click", toggleMenu);
+			</script>
 	</header>
 
 	<div class="parent">
