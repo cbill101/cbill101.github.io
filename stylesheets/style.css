@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 
+@media screen and (max-width: 600px) {
+	.top-menu {
+		display: none;
+	}
+
+	.menu-toggle {
+		display: block;
+		position: absolute;
+		top: 8px;
+		right: 16px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.tog-bar {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	.menu-toggle {
+		display: none;
+	}
+}
+
 body, head {
 	margin: 0;
 }
@@ -15,7 +41,7 @@ header {
 	justify-content: space-between;
 	width: calc(100% - 2em);
 	background: white;
-	position: absolute;
+	position: fixed;
 }
 
 header a {
@@ -71,6 +97,7 @@ header nav ul li a{
 .parent section.init-pic {
 	padding: 40em 8em 8em 8em;
 	background: url('../campus_!overview_fall.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -84,9 +111,92 @@ header nav ul li a{
 
 .parent section.init-pic p {
 	text-align: center;
+	font-size: 1.2rem;
+	margin-bottom: 0;
 	color: white;
 }
 
 .parent section.init-pic h2 {
 	text-align: center;
+}
+
+.parent section.about {
+	background-color: rgb(128, 148, 93);
+}
+
+.parent section.about .inner .headshot {
+	background-image: url('../cb_headshot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+	border: 1px;
+	border-style: ridge;
+}
+
+.parent section.projects {
+	background-color: bisque;
+}
+
+.parent nav ul {
+	list-style-type: none;
+	display: grid;
+}
+
+.parent section.contact {
+	background-color: darkgray;
+}
+
+.parent section.contact nav ul {
+	display: flex;
+}
+
+.parent section.content nav ul li a{
+	padding: 1em;
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.parent section.contact #twitter {
+	background-image: url('../iconmonstr-twitter-1-64.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.parent section.contact #instagram {
+	background-image: url('../iconmonstr-instagram-1-64.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-right: 3px;
+	width: 64px;
+	height: 64px;
+}
+
+.parent section.contact #github {
+	background-image: url('../iconmonstr-github-1-64.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-right: 10px;
+	width: 64px;
+	height: 64px;
+}
+
+.parent section.contact #facebook {
+	background-image: url('../iconmonstr-facebook-1-64.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.parent section.contact #linkedin {
+	background-image: url('../iconmonstr-linkedin-1-64.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding-right: 10px;
+	width: 64px;
+	height: 64px;
 }
