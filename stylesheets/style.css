@@ -172,54 +172,31 @@ header nav ul li a{
 
 .parent section.contact nav ul {
 	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
-.parent section.content nav ul li a{
-	padding: 1em;
-	display: block;
-	width: 64px;
-	height: 64px;
+.parent section.contact nav ul li{
+	margin-right: 50px;
 }
 
-.parent section.contact #twitter {
-	background-image: url('../iconmonstr-twitter-1-64.png');
+.parent section.contact a {
 	background-repeat: no-repeat;
 	display: block;
-	width: 64px;
-	height: 64px;
-}
-
-.parent section.contact #instagram {
-	background-image: url('../iconmonstr-instagram-1-64.png');
-	background-repeat: no-repeat;
-	display: block;
-	padding-right: 3px;
 	width: 64px;
 	height: 64px;
 }
 
 .parent section.contact #github {
 	background-image: url('../iconmonstr-github-1-64.png');
-	background-repeat: no-repeat;
-	display: block;
-	padding-right: 10px;
-	width: 64px;
-	height: 64px;
-}
-
-.parent section.contact #facebook {
-	background-image: url('../iconmonstr-facebook-1-64.png');
-	background-repeat: no-repeat;
-	display: block;
-	width: 64px;
-	height: 64px;
 }
 
 .parent section.contact #linkedin {
 	background-image: url('../iconmonstr-linkedin-1-64.png');
-	background-repeat: no-repeat;
-	display: block;
-	padding-right: 10px;
-	width: 64px;
-	height: 64px;
 }
+
+.parent section.contact #email {
+	background-image: url('../iconmonstr-email-3-64.png');
+}
+
