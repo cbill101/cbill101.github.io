@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Chris Billingsley</title>
-	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-</head>
-<body>
-	<header>
-		<a href="#" class="logo">Chris Billingsley</a>
-		<nav>
-			<div class="menu-toggle">
-				<h1 id="tog-bar">
-					☰
-				</h1>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Chris Billingsley</title>
+		<link href="stylesheets/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	</head>
+	<body>
+		<div class="container-fluid remove-all-margin">
+			<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+				<div class="container-fluid">
+					<span class="navbar-brand mb-0 fw-bold text-uppercase">Chris Billingsley</span>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">CS Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="jumbotron-fluid">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="campus_!overview_fall.jpg">
+					<div class="card-img-overlay d-flex">
+						<div class="my-auto mx-auto text-center text-light">
+							<h1 class="text-uppercase">Welcome!</h1>
+							<p>Thank you for visiting my portfolio page, my CS projects will be here.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<ul class="top-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">CS Projects</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-		</nav>
-		<script language="javascript">
-				function toggleMenu() {
-					let getMenu = document.querySelector(".top-menu");
-					getMenu.classList.toggle("hmb");
-				}
-		
-				let getHMB = document.querySelector("#tog-bar");
-				getHMB.addEventListener("click", toggleMenu);
-			</script>
-	</header>
+			<div class="row no-gutters">
+				<div class="card shadow col-md">
+					<div class="d-flex justify-content-center">
+						<img class="card-img-top headshot" src="cb_headshot.png">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title text-center">About Me</h3>
+						<p class="card-text">
+							I'm a budding software engineer born and raised in Utah.
+							I started getting into programming in high school and loved it since.
 
-	<div class="parent">
-		<section class="init-pic">
-			<div class="inner">
-				<div class="title">
-					<h1>Welcome!</h1>
+						</p>
+						<p class="card-text"><small class="text-muted">BS Computer Science, University of Utah, Class of 2020</small></p>
+					</div>
 				</div>
-				<div class="desc">
-					<p>Thank you for visiting my portfolio page, my CS projects will be here.</p>
+				<div class="card col-md">
+					<div class="card-body">
+						<h2 id="projects" class="card-title text-center">Personal Projects</h2>
+						<div class="list-group">
+							<a href="https://cbill101.github.io/ski-lift-backend" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Ski Lift</h5>
+									<span>Kotlin, Node.js, MongoDB, Express</span>
+								</div>
+								<span>Rideshare/Meetup-esque Android app for skiers and snowboarders.</span>
+							</a>
+							<a href="https://cbill101.github.io/ski-lift-backend" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Canvas Polls</h5>
+									<span>Rails, PostgreSQL, JavaScript</span>
+								</div>
+								<span>Polling module for Instructure's Canvas LMS application. I personally did the statistics view but had my hand everywhere.
+									I assisted with frontend design, making models and controllers, and did 80% of the database migrations with Postgres in Rails.</span>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Multi Client Spreadsheet</h5>
+									<span>C#, C++</span>
+								</div>
+								<span>Spreasheet application that's able to manage multiple concurrent clients on a per sheet basis. Client was made with C#, server was made with C++, using Boost to help with managing concurrency.</span>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Admin Discord Bot</h5>
+									<span>Golang</span>
+								</div>
+								<span>A bot for the chat app Discord that manages roles and helps server administrators. Written in Golang.</span>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Space Wars</h5>
+									<span>C#</span>
+								</div>
+								<span>A small game in C# where you try and shoot other ships within a map orbiting a star. 
+								Free for All and Team Deathmatch modes. Client and server both made in C#, with communication using JSON objects.</span>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex justify-content-between">
+									<h5 class="mb-1 fw-bold">Malware Filtering Proxy Server</h5>
+									<span>Python 3</span>
+								</div>
+								<span>Screens downloaded payloads through VirusTotal and rejects saving if malicious. Written in Python 3.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="card">
+				<div class="card-body mx-auto text-center">
+					<h2 id="contact" class="card-title">Contact Me</h2>
+					<div class="list-group list-group-horizontal">
+						<a id="linkedin" href="https://www.linkedin.com/in/christopher-billingsley-69a864128/" class="list-group-item card-link border-0">
+							<img src="iconmonstr-linkedin-1-64.png"/>
+						</a>
+						<a id="github" href="https://github.com/cbill101" class="list-group-item card-link border-0">
+							<img src="iconmonstr-github-1-64.png"/>
+						</a>
+						<a id="email" href="mailto:cbill1012@gmail.com" class="list-group-item card-link border-0">
+							<img src="iconmonstr-email-3-64.png"/>
+						</a>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section class="about">
-			<div class="inner">
-				<div class="title">
-					<h2>About Me</h2>
-				</div>
-				<div class="headshot">
-				</div>
-				<div class="desc">
-					<p>I'm a senior at the University of Utah studying CS. There's really nothing like creating something with a computer.</p>
-				</div>
-			</div>
-		</section>
-		<section class="projects">
-			<div class="inner">
-				<div class="title">
-					<h2>My Personal Projects</h2>
-				</div>
-				<div class="desc">
-					<nav>
-						<ul>
-							<li><a href="#" class="act-but">Discord Bot (Golang)</a></li>
-							<li><a href="#" class="act-but">Multi Client Spreadsheet (C#/C++)</a></li>
-							<li><a href="#" class="act-but">Space Wars (C#)</a></li>
-							<li><a href="#" class="act-but">Malware Filtering Proxy (Python)</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</section>
-		<section class="contact">
-			<div class="inner">
-				<div class="links">
-					<nav>
-						<ul>
-							<li><a id="linkedin" href="https://www.linkedin.com/in/christopher-billingsley-69a864128/" class="act-but"></a></li>
-							<li><a id="github" href="https://github.com/cbill101" class="act-but"></a></li>
-							<li><a id="email" href="mailto:cbill1012@gmail.com" class="act-but"></a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</section>
-	</div>
-</body>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	</body>
 </html>
