@@ -10,13 +10,14 @@
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	</head>
 	<body>
-		<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+		<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light shadow">
 			<div class="container-fluid">
 				<span class="navbar-brand mb-0 fw-bold text-uppercase">Chris Billingsley</span>
+				<div class="flex-grow-1"></div>
 				<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+				<div class="collapse navbar-collapse flex-grow-0 justify-content-end" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -27,18 +28,17 @@
 		</nav>
 		<div class="content">
 			<div class="card">
-				<div class="jumbo-img-container">
-					<img class="card-img-top welcome-img" src="campus_!overview_fall.jpg">
+				<div class="d-flex justify-content-center jumbotron w-100">
 				</div>
 				<div class="card-img-overlay d-flex">
-					<div class="my-auto mx-auto text-center text-light">
+					<div class="my-auto mx-auto text-center text-white">
 						<h1 class="text-uppercase">Welcome!</h1>
-						<p>Thank you for visiting my portfolio page, my CS projects will be here.</p>
+						<span style="font-size: 1.125rem;">Thank you for visiting my portfolio page, my CS projects will be here.</span>
 					</div>
 				</div>
 			</div>
 			<div class="row no-gutters">
-				<div class="card shadow col-md px-0 px-md-2">
+				<div class="card rounded-0 col-md px-0 px-md-2">
 					<div class="d-flex w-100 justify-content-center">
 						<div class="card-img-container">
 							<img class="card-img-top rounded-circle headshot mw-100 mh-100" src="cb_headshot.png">
@@ -88,7 +88,7 @@
 								<li>
 									Sneakers
 									<ul>
-										<li>Started to get into the sneaker game 3 years ago. I enjoy it, but it's only a once in a while thing.</li>
+										<li>Started to get into collecting sneakers in 2018. I enjoy it, but it's only a once in a while thing.</li>
 									</ul>
 								</li>
 							</ul>
@@ -96,7 +96,7 @@
 						<p class="card-text"><small class="text-muted">BS Computer Science, University of Utah, Class of 2020</small></p>
 					</div>
 				</div>
-				<div class="card col-md px-0 px-md-2">
+				<div class="card rounded-0 col-md px-0 px-md-2">
 					<div class="card-body">
 						<h2 id="projects" class="card-title text-center">Personal Projects</h2>
 						<div class="list-group">

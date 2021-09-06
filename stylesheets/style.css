@@ -2,14 +2,13 @@
 
 body {
 	font-family: 'Source Sans Pro';
+	margin: 0;
 }
 
-.welcome-img {
-	min-height: 20vh;
-}
-
-.jumbo-img-container {
-	min-height: 20vh;
+.jumbotron {
+	background: url("../campus_!overview_fall.jpg") no-repeat center center;
+	background-size: cover;
+	min-height: 40vh;
 }
 
 .card-img-top.headshot {
