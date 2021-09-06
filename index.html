@@ -10,17 +10,17 @@
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	</head>
 	<body>
-		<div class="container-fluid remove-all-margin">
+		<div class="container-fluid p-0">
 			<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
 				<div class="container-fluid">
 					<span class="navbar-brand mb-0 fw-bold text-uppercase">Chris Billingsley</span>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#projects">CS Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 							<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
 						</ul>
 					</div>
@@ -39,14 +39,16 @@
 			</div>
 			<div class="row no-gutters">
 				<div class="card shadow col-md">
-					<div class="d-flex justify-content-center">
-						<img class="card-img-top img-fluid headshot" src="cb_headshot.png">
+					<div class="d-flex w-100 justify-content-center">
+						<div class="card-img-container">
+							<img class="card-img-top rounded-circle headshot mw-100 mh-100" src="cb_headshot.png">
+						</div>
 					</div>
 					<div class="card-body">
 						<h3 class="card-title text-center">About Me</h3>
 						<h5>Journey</h5>
 						<p class="card-text">
-							I'm a budding software engineer born and raised in Utah.
+							I'm a full stack software engineer born and raised in Utah.
 							I started getting into programming in high school and loved it since.
 							I first started off writing simple Python scripts, then transitioned into C# and Java through Granite Technical Institute, my high school district's skills campus.
 						</p>
@@ -103,7 +105,7 @@
 									<h5 class="mb-1 fw-bold">Ski Lift</h5>
 									<span>Kotlin, Node.js, MongoDB, Express</span>
 								</div>
-								<span>Rideshare/Meetup-esque Android app for skiers and snowboarders.</span>
+								<span>Rideshare/Meetup-esque Android app for skiers and snowboarders. (Defunct 2021, not enough time)</span>
 							</a>
 							<a href="https://eng.utah.edu/~cbilling" class="list-group-item list-group-item-action">
 								<div class="d-flex justify-content-between">
@@ -164,6 +166,6 @@
 			</div>
 		</div>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>
