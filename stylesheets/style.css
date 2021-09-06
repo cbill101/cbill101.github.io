@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 
-html, body {
-	margin: 0;
-	padding: 0;
-}
 body {
 	font-family: 'Source Sans Pro';
+}
+
+.welcome-img {
+	min-height: 20vh;
+}
+
+.jumbo-img-container {
+	min-height: 20vh;
 }
 
 .card-img-top.headshot {
@@ -20,3 +24,8 @@ body {
 	margin: 0;
 }
 
+@media (max-width: 768px) {
+	.card {
+		border: 0;
+	}
+}

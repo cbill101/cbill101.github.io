@@ -10,35 +10,35 @@
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	</head>
 	<body>
-		<div class="container-fluid p-0">
-			<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
-				<div class="container-fluid">
-					<span class="navbar-brand mb-0 fw-bold text-uppercase">Chris Billingsley</span>
-					<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-							<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-						</ul>
-					</div>
+		<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+			<div class="container-fluid">
+				<span class="navbar-brand mb-0 fw-bold text-uppercase">Chris Billingsley</span>
+				<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+					</ul>
 				</div>
-			</nav>
-			<div class="jumbotron-fluid">
-				<div class="card">
-					<img class="card-img-top img-fluid img-jumbo" src="campus_!overview_fall.jpg">
-					<div class="card-img-overlay d-flex">
-						<div class="my-auto mx-auto text-center text-light">
-							<h1 class="text-uppercase">Welcome!</h1>
-							<p>Thank you for visiting my portfolio page, my CS projects will be here.</p>
-						</div>
+			</div>
+		</nav>
+		<div class="content">
+			<div class="card">
+				<div class="jumbo-img-container">
+					<img class="card-img-top welcome-img" src="campus_!overview_fall.jpg">
+				</div>
+				<div class="card-img-overlay d-flex">
+					<div class="my-auto mx-auto text-center text-light">
+						<h1 class="text-uppercase">Welcome!</h1>
+						<p>Thank you for visiting my portfolio page, my CS projects will be here.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row no-gutters">
-				<div class="card shadow col-md">
+				<div class="card shadow col-md px-0 px-md-2">
 					<div class="d-flex w-100 justify-content-center">
 						<div class="card-img-container">
 							<img class="card-img-top rounded-circle headshot mw-100 mh-100" src="cb_headshot.png">
@@ -96,70 +96,71 @@
 						<p class="card-text"><small class="text-muted">BS Computer Science, University of Utah, Class of 2020</small></p>
 					</div>
 				</div>
-				<div class="card col-md">
+				<div class="card col-md px-0 px-md-2">
 					<div class="card-body">
 						<h2 id="projects" class="card-title text-center">Personal Projects</h2>
 						<div class="list-group">
 							<a href="https://cbill101.github.io/ski-lift-backend" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Ski Lift</h5>
-									<span>Kotlin, Node.js, MongoDB, Express</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold mb-0">Ski Lift</h5>
+									<span class="text-muted fst-italic py-1">Kotlin, Node.js, MongoDB, Express</span>
+									<span>Rideshare/Meetup-esque Android app for skiers and snowboarders. (Defunct 2021, not enough time)</span>
 								</div>
-								<span>Rideshare/Meetup-esque Android app for skiers and snowboarders. (Defunct 2021, not enough time)</span>
+
 							</a>
 							<a href="https://eng.utah.edu/~cbilling" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Canvas Polls</h5>
-									<span>Rails, PostgreSQL, JavaScript</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold m-0">Canvas Polls</h5>
+									<span class="text-muted fst-italic py-1">Rails, PostgreSQL, JavaScript</span>
+									<span>Polling module for Instructure's Canvas LMS application. I personally did the statistics view but had my hand everywhere.
+										I assisted with frontend design, making models and controllers, and did 80% of the database migrations with Postgres in Rails.</span>
 								</div>
-								<span>Polling module for Instructure's Canvas LMS application. I personally did the statistics view but had my hand everywhere.
-									I assisted with frontend design, making models and controllers, and did 80% of the database migrations with Postgres in Rails.</span>
 							</a>
 							<a href="https://bitbucket.org/cbill101/cs3505-spreadsheet" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Multi Client Spreadsheet</h5>
-									<span>C#, C++</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold m-0">Multi Client Spreadsheet</h5>
+									<span class="text-muted fst-italic py-1">C#, C++</span>
+									<span>Spreasheet application that's able to manage multiple concurrent clients on a per sheet basis. Client was made with C#, server was made with C++, using Boost to help with managing concurrency.</span>
 								</div>
-								<span>Spreasheet application that's able to manage multiple concurrent clients on a per sheet basis. Client was made with C#, server was made with C++, using Boost to help with managing concurrency.</span>
 							</a>
 							<a href="https://github.com/cbill101/personal-projects/tree/master/Go/DiscordBot" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Admin Discord Bot</h5>
-									<span>Golang</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold m-0">Admin Discord Bot</h5>
+									<span class="text-muted fst-italic py-1">Golang</span>
+									<span>A bot for the chat app Discord that manages roles and helps server administrators.</span>
 								</div>
-								<span>A bot for the chat app Discord that manages roles and helps server administrators.</span>
 							</a>
 							<a href="https://github.com/cbill101/personal-projects/tree/master/SpaceWars" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Space Wars</h5>
-									<span>C#</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold m-0">Space Wars</h5>
+									<span class="text-muted fst-italic py-1">C#</span>
+									<span>A small game in C# where you try and shoot other ships within a map orbiting a star. 
+										Free for All and Team Deathmatch modes. Client and server both made in C#, with communication using JSON objects.</span>
 								</div>
-								<span>A small game in C# where you try and shoot other ships within a map orbiting a star. 
-								Free for All and Team Deathmatch modes. Client and server both made in C#, with communication using JSON objects.</span>
 							</a>
 							<a href="#" class="list-group-item list-group-item-action">
-								<div class="d-flex justify-content-between">
-									<h5 class="mb-1 fw-bold">Malware Filtering Proxy Server</h5>
-									<span>Python 3</span>
+								<div class="d-flex flex-column">
+									<h5 class="fw-bold m-0">Malware Filtering Proxy Server</h5>
+									<span class="text-muted fst-italic py-1">Python 3</span>
+									<span>Screens downloaded payloads through VirusTotal and rejects saving if malicious.</span>
 								</div>
-								<span>Screens downloaded payloads through VirusTotal and rejects saving if malicious.</span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>		
 			<div class="card">
-				<div class="card-body mx-auto text-center">
+				<div class="card-body mx-auto text-center w-100">
 					<h2 id="contact" class="card-title">Contact Me</h2>
-					<div class="list-group list-group-horizontal">
-						<a id="linkedin" href="https://www.linkedin.com/in/christopher-billingsley-69a864128/" class="list-group-item card-link border-0">
-							<img src="iconmonstr-linkedin-1-64.png"/>
+					<div class="list-group list-group-horizontal justify-content-center">
+						<a id="linkedin" href="https://www.linkedin.com/in/christopher-billingsley-69a864128/" class="list-group-item px-2 px-md-3 card-link border-0">
+							<img class="mw-100 mh-100" src="iconmonstr-linkedin-1-64.png"/>
 						</a>
-						<a id="github" href="https://github.com/cbill101" class="list-group-item card-link border-0">
-							<img src="iconmonstr-github-1-64.png"/>
+						<a id="github" href="https://github.com/cbill101" class="list-group-item px-2 px-md-3 card-link border-0">
+							<img class="mw-100 mh-100" src="iconmonstr-github-1-64.png"/>
 						</a>
-						<a id="email" href="mailto:cbill1012@gmail.com" class="list-group-item card-link border-0">
-							<img src="iconmonstr-email-3-64.png"/>
+						<a id="email" href="mailto:cbill1012@gmail.com" class="list-group-item px-2 px-md-3 card-link border-0">
+							<img class="mw-100 mh-100" src="iconmonstr-email-3-64.png"/>
 						</a>
 					</div>
 				</div>
